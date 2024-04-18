@@ -6,7 +6,7 @@ import inquirer from "inquirer";
 
 //3) copmer user input with computer generated number  and show result
 
-
+console.log('\n\t\t\t"Wellcome To Our Number Guessing Game."\n')
 const randomNumber = Math.floor(Math.random() *6 + 1);
 // console.log(randomNumber );
 
@@ -19,9 +19,9 @@ const answers = await inquirer.prompt([
 ]);
 
 if(answers.userGuessedNumber === randomNumber){
-console.log("Congtratulation! You Write Right Number.");
+console.log("\nCongtratulation! You Write Right Number.");
 
 }else{
-    console.log("You Guess Rong Number.");
+    console.log("\nSorry! You Guess Rong Number.");
 }
 
